@@ -1,0 +1,46 @@
+{
+    "monitor_version": "1.0.1.0",
+    "monitor_description": "变压器监测对象",
+    "monitor_name": "BYQ",
+    "monitor_class": "BYQMonitor",
+    "task_pack":
+        {
+            "general":
+                {
+                    "real_time_BYQ_anomaly_detection":
+                        {
+                            "description": {"real_time_BYQ_anomaly_detection":["zlpc", "zgz", "rzbx", "zlpc+zgz", "zlpc", "rzbx+zgz", "False"]},
+                            "data_pack":
+                                {
+                                    "data": "data",
+                                    "sample_rate": "sample_rate"
+                                },
+                            "result_pack":
+                                {
+                                    "result": "故障类型代码"
+                                }
+
+                        }
+                }
+        },
+
+    "init_parameter":{},
+
+    "self_define_parameter":{},
+
+    "variable_parameter": {},
+
+    "task_mapping":{},
+
+    "label_mapping":
+    {
+        "0": "Normal",
+        "1": "zlpc",
+        "2": "zgz",
+        "4": "rzbx",
+        "3": "zlpc+zgz",
+        "5": "zlpc",
+        "6": "rzbx+zgz",
+        "8": "False"
+    }
+}

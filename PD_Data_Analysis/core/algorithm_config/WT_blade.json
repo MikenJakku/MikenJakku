@@ -1,0 +1,55 @@
+{
+    "monitor_version": "1.0.0.0",
+    "monitor_description": "金风实验环境叶片监测",
+    "monitor_name": "WT_blade",
+    "monitor_class": "WtBlade",
+    "task_pack":
+        {
+            "general":
+                {
+                    "blade_detect":
+                        {
+                            "description": "叶片缺陷诊断",
+                            "data_pack":
+                                {
+                                    "data": "叶片监测数据"
+                                },
+                            "result_pack":
+                                {
+                                    "level": "当前数据的异常定量指标"
+                                }
+                        }
+                }
+        },
+
+    "init_parameter":
+    {
+        "sr": 48000,
+        "slice_len": 4096,
+        "high_freq" : 20000,
+        "low_freq": 2000,
+        "split_freq" : 5000,
+
+        "sql_host": "127.0.0.1",
+        "sql_port": 3306,
+        "sql_user": "txkj",
+        "sql_password": "txkj",
+        "sql_database": "blade_data"
+    },
+
+    "self_define_parameter":
+    {
+    },
+
+    "variable_parameter":
+    {
+    },
+
+    "task_mapping":
+    {
+    },
+
+    "label_mapping":
+    {
+    }
+}

@@ -1,0 +1,129 @@
+{
+    "monitor_version": "1.0.0.0",
+    "monitor_description": "Vibration analysis of bearing defects",
+    "monitor_name": "Single_Bearing_Equipment",
+    "monitor_class": "SingleBearingEquipment",
+    "task_pack":
+        {
+            "general":
+                {
+                    "rt_diagnosis":
+                        {
+                            "description": "轴承实时缺陷检测",
+                            "data_pack":
+                                {
+                                    "equipment_id": "设备名称或编号",
+                                    "RH": {
+                                        "raw": "原始振动数据, 可以为None",
+                                        "rotat_freq": "转频数据，定转速数据为浮点数，变转速为数组",
+                                        "sr": "采样率"
+                                    },
+                                    "RV": {
+                                        "raw": "原始振动数据， 可以为None",
+                                        "rotat_freq": "转频数据，定转速数据为浮点数，变转速为数组",
+                                        "sr": "采样率"
+                                    },
+                                    "Ax": {
+                                        "raw": "原始振动数据，可以为None",
+                                        "rotat_freq": "转频数据，定转速数据为浮点数，变转速为数组",
+                                        "sr": "采样率"
+                                    }
+                                },
+                            "result_pack":
+                                {"bearing_defects": "dict；轴承异常代码：等级。无异常时本字典为空",
+                                "coupling_etc_defects": "dict；联轴器等异常代码：等级。无异常时本字典为空",
+                                "health_status": "str; 部件健康评级：health健康/warning警告/fatal严重"}
+                        }
+                }
+        },
+
+    "init_parameter":
+    {
+    },
+
+    "self_define_parameter":
+    {
+        "window_ENBW":
+        {
+            "boxcar": [1.0, 0.0],
+            "bartlett": [1.333, 1.250],
+            "blackman": [1.727, 2.373],
+            "hamming": [1.363, 1.345],
+            "hanning": [1.500, 1.761]
+        },
+        "position_mapping":
+        {
+            "RH": "径向水平",
+            "RV": "径向垂直",
+            "Ax": "轴向"
+        }
+    },
+
+    "variable_parameter":
+    {
+        "delta_freq": 3,
+        "harmonic_orders": 5,
+        "minN_rms": 10,
+        "plot_upper_freq": 500,
+        "snr_th_1st": 0.8,
+        "char_freq_info": {
+            "BPFO": [4.475, 5, "#ffa600", "外滚道特征频率"],
+            "BPFI": [6.425, 5, "#ff6361", "内滚道特征频率"],
+            "BSF": [5.778, 5, "#bc5090", "滚动子特征频率"],
+            "FTF": [0.416, 10, "#58508d", "保持架特征频率"],
+            "rotation": [1, 10, "#003f5c", "转频"],
+            "half_rotation": [0.5, 10, "#003f5c", "半转频"]
+        },
+        "surface_defect_th": {
+            "warning": 10,
+            "fatal": 20
+        },
+
+        "rotation_loose_order_th": 7,
+        "structural_loose_th": 4,
+        "structural_loose_direction": "RH",
+        "parallel_misalignment_th": 0.8,
+        "combined_misalignment_th": 5,
+        "bent_shaft_th": 0.8,
+        "unbalance_th": 5,
+
+        "OA_thresholds": {
+            "warning": 30,
+            "fatal": 100
+        },
+        "OA_freq_range": {
+            "high": 0.1,
+            "low": 5000
+        },
+        "envelope_band": {
+            "low": 1,
+            "high": 5000,
+            "order": 2
+        },
+        "wave_band": {
+            "low": 1,
+            "high": 5000,
+            "order": 2
+        }
+    },
+
+    "task_mapping":
+    {
+    },
+
+    "label_mapping":
+    {
+        "BR1": "rotating_looseness",
+        "M1": "structural_looseness",
+        "M2": "pillow_block_looseness",
+        "CP1": "parallel_misalignment",
+        "CP2": "angular_misalignment",
+        "CP3": "combined_misalignment",
+        "CP4": "bent_shaft",
+        "CP5": "unbalance",
+        "BSF": "BSF",
+        "BPFI": "BPFI",
+        "BPFO": "BPFO",
+        "FTF": "FTF"
+    }
+}

@@ -1,0 +1,94 @@
+{
+    "monitor_version": "0.0.0.0",
+    "monitor_description": "声纹服务测试用例",
+    "monitor_name": "EXAMPLE",
+    "monitor_class": "EXAMPLEMonitor",
+    "task_pack":
+        {
+            "algorithm1":
+                {
+                    "task1":
+                        {
+                            "description": {"example_func_1": ["example_tag_1", "example_tag_2"]},
+                            "data_pack":
+                                {
+                                    "scenario": "scenario"
+                                },
+                            "result_pack":
+                                {
+                                    "result": "result"
+                                }
+                        },
+                    "task2":
+                        {
+                            "description": {"example_func_2": ["example_tag_3", "example_tag_4"]},
+                            "data_pack":
+                                {
+                                    "sample_rate": "sample_rate"
+                                },
+                            "result_pack":
+                                {
+                                    "result": "result"
+                                }
+                        }
+                },
+            "algorithm2":
+                {
+                    "task3":
+                        {
+                            "description": {"example_func_3": ["example_tag_5", "example_tag_6"]},
+                            "data_pack":
+                                {
+                                    "scenario": "scenario"
+                                },
+                            "result_pack":
+                                {
+                                    "result": "result"
+                                }
+                        },
+                    "task4":
+                        {
+                            "description": {"example_func_4": ["example_tag_7", "example_tag_8"]},
+                            "data_pack":
+                                {
+                                    "sample_rate": "sample_rate"
+                                },
+                            "result_pack":
+                                {
+                                    "result": "result"
+                                }
+                        }
+                }
+        },
+
+    "init_parameter":
+    {
+        "init1": "init_parameter1",
+        "init2": "init_parameter2"
+    },
+
+    "self_define_parameter":
+    {
+        "self_define1": "self_define_parameter1",
+        "self_define2": "self_define_parameter2"
+    },
+
+    "variable_parameter":
+    {
+        "variable1": "variable_parameter1",
+        "variable2": "variable_parameter2"
+    },
+
+    "task_mapping":
+    {
+        "task1_server_name": "task1",
+        "task2_server_name": "task2"
+    },
+
+    "label_mapping":
+    {
+        "0": "label0",
+        "1": "label1",
+        "2": "label2"
+    }
+}

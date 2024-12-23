@@ -1,0 +1,67 @@
+{
+    "monitor_version": "1.0.0.0",
+    "monitor_description": "金风叶片比赛临时",
+    "monitor_name": "WTB_Contest",
+    "monitor_class": "WTBContest",
+    "task_pack":
+        {
+            "general":
+                {
+                    "rt_diagnosis":
+                        {
+                            "description": "疲劳测试期间损伤检测",
+                            "data_pack":
+                                {
+                                    "raw": "1d np.ndarray，原始数据，不短于10s",
+                                    "sr": "int, 采样率",
+                                    "dt": "str, %Y-%m-%d-%H-%M-%S-%f",
+                                    "equipment_id": "str, 被测设备唯一识别代码",
+                                    "position": "str，测点名"
+                                },
+                            "result_pack":
+                                {
+                                    "status": "str",
+                                    "iBER": "float",
+                                    "pp_ratio": "float",
+                                    "rms": "float"
+                                }
+                        }
+                }
+        },
+
+    "init_parameter":
+    {
+    },
+
+    "self_define_parameter":
+    {
+    },
+
+    "variable_parameter":
+    {
+        "pp_time": 0.2,
+        "rms_time": 10,
+        "stop_rms_th": 0.0003,
+        "pia_pp_ratio_th": 4,
+        "rustle_iBER_th": 1.5,
+        "split_freq": 5000,
+        "BP_filter": {
+            "low": 2000,
+            "high": 20000,
+            "order": 8
+        }
+    },
+
+    "task_mapping":
+    {
+    },
+
+    "label_mapping":
+    {
+        "0": "wtb_stop",
+        "1": "wtb_healthy",
+        "2": "wtb_warning",
+        "3": "wtb_pia",
+        "4": "wtb_rustle"
+    }
+}

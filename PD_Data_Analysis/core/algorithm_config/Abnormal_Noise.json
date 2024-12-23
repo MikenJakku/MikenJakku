@@ -1,0 +1,73 @@
+{
+    "monitor_version": "1.0.0.0",
+    "monitor_description": "Detecting abnormal noises",
+    "monitor_name": "Abnormal_Noise",
+    "monitor_class": "AbnormalNoise",
+    "task_pack":
+        {
+            "general":
+                {
+                    "rt_diagnosis":
+                        {
+                            "description": "异音检测",
+                            "data_pack":
+                                {
+                                    "raw": "原始声信号",
+                                    "sr": "采样率",
+                                    "equipment_id": "设备名称或编号",
+                                    "position": "mic1"
+                                },
+                            "result_pack":
+                                {"overall":  "str;  噪声总值评级：healty健康/warning警告/fatal严重",
+                                "abnormal": "int; 异响：0无异响/1有异响"}
+                        }
+                }
+        },
+
+    "init_parameter":
+    {
+    },
+
+    "self_define_parameter":
+    {
+        "window_ENBW":
+        {
+            "boxcar": [1.0, 0.0],
+            "bartlett": [1.333, 1.250],
+            "blackman": [1.727, 2.373],
+            "hamming": [1.363, 1.345],
+            "hanning": [1.500, 1.761]
+        }
+    },
+
+    "variable_parameter":
+    {
+        "filter_band": {
+            "low": 2000,
+            "high": 25000,
+            "order": 2
+        },
+        "clip_len": 0.5,
+        "low_band": [2000, 12000],
+        "high_band": [12000, 25000],
+        "OA_freq_range":{
+            "low": 1000,
+            "high": 25000
+        },
+        "OA_thresholds": {
+            "warning": 30,
+            "fatal": 100
+        },
+        "BER_th": 2
+    },
+
+    "task_mapping":
+    {
+    },
+
+    "label_mapping":
+    {
+        "0": "normal",
+        "1": "abnormal"
+    }
+}

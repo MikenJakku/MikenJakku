@@ -1,0 +1,121 @@
+{
+    "monitor_version": "1.0.0.0",
+    "monitor_description": "Vibration analysis of gear system defects",
+    "monitor_name": "Gear_System",
+    "monitor_class": "GearSystem",
+    "task_pack":
+        {
+            "general":
+                {
+                    "rt_diagnosis":
+                        {
+                            "description": "齿轮实时缺陷检测",
+                            "data_pack":
+                                {
+                                    "position": "low/high_end",
+                                    "raw": "原始振动数据, 保证高频谱分辨",
+                                    "rotat_freq": "转频数据，定转速数据为浮点数，变转速为数组",
+                                    "sr": "采样率",
+                                    "equipment_id": "设备名称或编号"
+                                },
+                            "result_pack":
+                                {"OA": "float；振动总值",
+                                "health_status": "str; 部件健康评级：health健康/warning警告/fatal严重",
+                                "gear_defects": "dict；异常代码：等级。无异常时本字典为空"}
+                        }
+                }
+        },
+
+    "init_parameter":
+    {
+        "low_end": {
+            "char_freq_info": {
+                "GMF":[0, 2, "#ffa600", "啮合频率"],
+                "GNF_drive": [0, 5,  "#ff6361", "主动轮自振频率"],
+                "GNF_driven": [0, 5,  "#bc5090", "从动轮自振频率"]
+            },
+            "envelope_band": {
+                "low": 10,
+                "high": 3000,
+                "order": 4
+            }
+        },
+        "high_end": {
+            "char_freq_info": {
+                "GMF":[2, 5, "#ffa600", "啮合频率"],
+                "GNF_drive": [1, 2,  "#ff6361", "主动轮自振频率"],
+                "GNF_driven": [5, 2,  "#bc5090", "从动轮自振频率"]
+            },
+            "envelope_band": {
+                "low": 10,
+                "high": 3000,
+                "order": 4
+            }
+        }
+    },
+
+    "self_define_parameter":
+    {
+        "window_ENBW":
+        {
+            "boxcar": [1.0, 0.0],
+            "bartlett": [1.333, 1.250],
+            "blackman": [1.727, 2.373],
+            "hamming": [1.363, 1.345],
+            "hanning": [1.500, 1.761]
+        },
+        "position_mapping":
+        {
+            "low_end": "低速端",
+            "high_end": "高速端"
+        },
+        "char_freq_mapping": {
+            "GNF_driven": "从动轮",
+            "GNF_drive": "驱动轮"
+        }
+    },
+
+    "variable_parameter":
+    {
+        "delta_freq": 3,
+        "harmonic_orders": 5,
+        "minN_rms": 10,
+        "plot_upper_freq": 500,
+        "snr_th_1st": 0.8,
+        "overload_snr_th": 10,
+        "shock_frame": 4096,
+        "shock_snr_th": 7,
+        "excessive_wear_OA_th": 20,
+        "high_friction_OA_th": 20,
+        "high_friction_GMF_th": 10,
+        "OA_freq_range": {
+            "high": 0.1,
+            "low": 5000
+        },
+        "OA_thresholds": {
+            "warning": 30,
+            "fatal": 100
+        },
+        "wave_band": {
+            "low": 1,
+            "high": 5000,
+            "order": 2
+        }
+    },
+
+    "task_mapping":
+    {
+    },
+
+    "label_mapping":
+    {
+        "GR1": "surface_defect",
+        "GR2": "excessive_wear",
+        "GR3": "broken_tooth",
+        "GR4": "excessive_backlash",
+        "GR5": "overload",
+        "GR6": "misalignment",
+        "GR7": "high_friction",
+        "GR8": "eccentricity"
+    }
+}

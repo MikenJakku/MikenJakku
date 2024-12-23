@@ -1,0 +1,947 @@
+{
+    "monitor_version": "1.0.0.0",
+    "monitor_description": "WindTurbine_Direct",
+    "monitor_name": "WT_Direct",
+    "monitor_class": "WT_Direct",
+    "task_pack":
+        {
+            "ch1":
+                {
+                    "rt_features":
+                        {
+                            "description": "实时特征提取",
+                            "data_pack":
+                                {
+                                    "raw": "raw",
+                                    "freq_rpm_low": "freq_rpm_low",
+                                    "freq_rpm_high": "freq_rpm_high",
+                                    "datetime": "yyyymmddhhmmss",
+                                    "equipment_id": "equipment_id",
+                                    "channel_name": "channel_name"
+                                },
+                            "result_pack":
+                                {}
+                        },
+                    "diagnosis_report":
+                        {
+                            "description": "当日特征计算，结果用于健康等级评估、机械故障诊断",
+                            "data_pack":
+                                {
+                                    "datetime": "yyyymmddhhmmss",
+                                    "equipment_id": "equipment_id",
+                                    "channel_name": "channel_name"
+                                },
+                            "result_pack":
+                                {
+                                    "result": "result"
+                                }
+                        }
+                },
+            "ch2":
+                {
+                    "rt_features":
+                        {
+                            "description": "实时特征提取",
+                            "data_pack":
+                                {
+                                    "raw": "raw",
+                                    "freq_rpm_low": "freq_rpm_low",
+                                    "freq_rpm_high": "freq_rpm_high",
+                                    "datetime": "yyyymmddhhmmss",
+                                    "equipment_id": "equipment_id",
+                                    "channel_name": "channel_name"
+                                },
+                            "result_pack":
+                                {}
+                        },
+                    "diagnosis_report":
+                        {
+                            "description": "当日特征计算，结果用于健康等级评估、机械故障诊断",
+                            "data_pack":
+                                {
+                                    "datetime": "yyyymmddhhmmss",
+                                    "equipment_id": "equipment_id",
+                                    "channel_name": "channel_name"
+                                },
+                            "result_pack":
+                                {
+                                    "result": "result"
+                                }
+                        }
+                },
+            "ch3":
+                {
+                    "rt_features":
+                        {
+                            "description": "实时特征提取",
+                            "data_pack":
+                                {
+                                    "raw": "raw",
+                                    "freq_rpm_low": "freq_rpm_low",
+                                    "freq_rpm_high": "freq_rpm_high",
+                                    "datetime": "yyyymmddhhmmss",
+                                    "equipment_id": "equipment_id",
+                                    "channel_name": "channel_name"
+                                },
+                            "result_pack":
+                                {}
+                        },
+                    "diagnosis_report":
+                        {
+                            "description": "当日特征计算，结果用于健康等级评估、机械故障诊断",
+                            "data_pack":
+                                {
+                                    "datetime": "yyyymmddhhmmss",
+                                    "equipment_id": "equipment_id",
+                                    "channel_name": "channel_name"
+                                },
+                            "result_pack":
+                                {
+                                    "result": "result"
+                                }
+                        }
+                },
+            "ch4":
+                {
+                    "rt_features":
+                        {
+                            "description": "实时特征提取",
+                            "data_pack":
+                                {
+                                    "raw": "raw",
+                                    "freq_rpm_low": "freq_rpm_low",
+                                    "freq_rpm_high": "freq_rpm_high",
+                                    "datetime": "yyyymmddhhmmss",
+                                    "equipment_id": "equipment_id",
+                                    "channel_name": "channel_name"
+                                },
+                            "result_pack":
+                                {}
+                        },
+                    "diagnosis_report":
+                        {
+                            "description": "当日特征计算，结果用于健康等级评估、机械故障诊断",
+                            "data_pack":
+                                {
+                                    "datetime": "yyyymmddhhmmss",
+                                    "equipment_id": "equipment_id",
+                                    "channel_name": "channel_name"
+                                },
+                            "result_pack":
+                                {
+                                    "result": "result"
+                                }
+                        }
+                },
+            "ch5":
+                {
+                    "rt_features":
+                        {
+                            "description": "实时特征提取",
+                            "data_pack":
+                                {
+                                    "raw": "raw",
+                                    "freq_rpm_low": "freq_rpm_low",
+                                    "freq_rpm_high": "freq_rpm_high",
+                                    "datetime": "yyyymmddhhmmss",
+                                    "equipment_id": "equipment_id",
+                                    "channel_name": "channel_name"
+                                },
+                            "result_pack":
+                                {}
+                        },
+                    "diagnosis_report":
+                        {
+                            "description": "当日特征计算，结果用于健康等级评估、机械故障诊断",
+                            "data_pack":
+                                {
+                                    "datetime": "yyyymmddhhmmss",
+                                    "equipment_id": "equipment_id",
+                                    "channel_name": "channel_name"
+                                },
+                            "result_pack":
+                                {
+                                    "result": "result"
+                                }
+                        }
+                },
+            "ch6":
+                {
+                    "rt_features":
+                        {
+                            "description": "实时特征提取",
+                            "data_pack":
+                                {
+                                    "raw": "raw",
+                                    "freq_rpm_low": "freq_rpm_low",
+                                    "freq_rpm_high": "freq_rpm_high",
+                                    "datetime": "yyyymmddhhmmss",
+                                    "equipment_id": "equipment_id",
+                                    "channel_name": "channel_name"
+                                },
+                            "result_pack":
+                                {}
+                        },
+                    "diagnosis_report":
+                        {
+                            "description": "当日特征计算，结果用于健康等级评估、机械故障诊断",
+                            "data_pack":
+                                {
+                                    "datetime": "yyyymmddhhmmss",
+                                    "equipment_id": "equipment_id",
+                                    "channel_name": "channel_name"
+                                },
+                            "result_pack":
+                                {
+                                    "result": "result"
+                                }
+                        }
+                },
+            "ch7":
+                {
+                    "rt_features":
+                        {
+                            "description": "实时特征提取",
+                            "data_pack":
+                                {
+                                    "raw": "raw",
+                                    "freq_rpm_low": "freq_rpm_low",
+                                    "freq_rpm_high": "freq_rpm_high",
+                                    "datetime": "yyyymmddhhmmss",
+                                    "equipment_id": "equipment_id",
+                                    "channel_name": "channel_name"
+                                },
+                            "result_pack":
+                                {}
+                        },
+                    "diagnosis_report":
+                        {
+                            "description": "当日特征计算，结果用于健康等级评估、机械故障诊断",
+                            "data_pack":
+                                {
+                                    "datetime": "yyyymmddhhmmss",
+                                    "equipment_id": "equipment_id",
+                                    "channel_name": "channel_name"
+                                },
+                            "result_pack":
+                                {
+                                    "result": "result"
+                                }
+                        }
+                },
+            "ch8":
+                {
+                    "rt_features":
+                        {
+                            "description": "实时特征提取",
+                            "data_pack":
+                                {
+                                    "raw": "raw",
+                                    "freq_rpm_low": "freq_rpm_low",
+                                    "freq_rpm_high": "freq_rpm_high",
+                                    "datetime": "yyyymmddhhmmss",
+                                    "equipment_id": "equipment_id",
+                                    "channel_name": "channel_name"
+                                },
+                            "result_pack":
+                                {}
+                        },
+                    "diagnosis_report":
+                        {
+                            "description": "当日特征计算，结果用于健康等级评估、机械故障诊断",
+                            "data_pack":
+                                {
+                                    "datetime": "yyyymmddhhmmss",
+                                    "equipment_id": "equipment_id",
+                                    "channel_name": "channel_name"
+                                },
+                            "result_pack":
+                                {
+                                    "result": "result"
+                                }
+                        }
+                },
+            "ch9":
+                {
+                    "rt_features":
+                        {
+                            "description": "实时特征提取",
+                            "data_pack":
+                                {
+                                    "raw": "raw",
+                                    "freq_rpm_low": "freq_rpm_low",
+                                    "freq_rpm_high": "freq_rpm_high",
+                                    "datetime": "yyyymmddhhmmss",
+                                    "equipment_id": "equipment_id",
+                                    "channel_name": "channel_name"
+                                },
+                            "result_pack":
+                                {}
+                        },
+                    "diagnosis_report":
+                        {
+                            "description": "当日特征计算，结果用于健康等级评估、机械故障诊断",
+                            "data_pack":
+                                {
+                                    "datetime": "yyyymmddhhmmss",
+                                    "equipment_id": "equipment_id",
+                                    "channel_name": "channel_name"
+                                },
+                            "result_pack":
+                                {
+                                    "result": "result"
+                                }
+                        }
+                },
+            "ch10":
+                {
+                    "rt_features":
+                        {
+                            "description": "实时特征提取",
+                            "data_pack":
+                                {
+                                    "raw": "raw",
+                                    "freq_rpm_low": "freq_rpm_low",
+                                    "freq_rpm_high": "freq_rpm_high",
+                                    "datetime": "yyyymmddhhmmss",
+                                    "equipment_id": "equipment_id",
+                                    "channel_name": "channel_name"
+                                },
+                            "result_pack":
+                                {}
+                        },
+                    "diagnosis_report":
+                        {
+                            "description": "当日特征计算，结果用于健康等级评估、机械故障诊断",
+                            "data_pack":
+                                {
+                                    "datetime": "yyyymmddhhmmss",
+                                    "equipment_id": "equipment_id",
+                                    "channel_name": "channel_name"
+                                },
+                            "result_pack":
+                                {
+                                    "result": "result"
+                                }
+                        }
+                },
+            "ch11":
+                {
+                    "rt_features":
+                        {
+                            "description": "实时特征提取",
+                            "data_pack":
+                                {
+                                    "raw": "raw",
+                                    "freq_rpm_low": "freq_rpm_low",
+                                    "freq_rpm_high": "freq_rpm_high",
+                                    "datetime": "yyyymmddhhmmss",
+                                    "equipment_id": "equipment_id",
+                                    "channel_name": "channel_name"
+                                },
+                            "result_pack":
+                                {}
+                        },
+                    "diagnosis_report":
+                        {
+                            "description": "当日特征计算，结果用于健康等级评估、机械故障诊断",
+                            "data_pack":
+                                {
+                                    "datetime": "yyyymmddhhmmss",
+                                    "equipment_id": "equipment_id",
+                                    "channel_name": "channel_name"
+                                },
+                            "result_pack":
+                                {
+                                    "result": "result"
+                                }
+                        }
+                },
+            "ch12":
+                {
+                    "rt_features":
+                        {
+                            "description": "实时特征提取",
+                            "data_pack":
+                                {
+                                    "raw": "raw",
+                                    "freq_rpm_low": "freq_rpm_low",
+                                    "freq_rpm_high": "freq_rpm_high",
+                                    "datetime": "yyyymmddhhmmss",
+                                    "equipment_id": "equipment_id",
+                                    "channel_name": "channel_name"
+                                },
+                            "result_pack":
+                                {}
+                        },
+                    "diagnosis_report":
+                        {
+                            "description": "当日特征计算，结果用于健康等级评估、机械故障诊断",
+                            "data_pack":
+                                {
+                                    "datetime": "yyyymmddhhmmss",
+                                    "equipment_id": "equipment_id",
+                                    "channel_name": "channel_name"
+                                },
+                            "result_pack":
+                                {
+                                    "result": "result"
+                                }
+                        }
+                }
+        },
+
+    "init_parameter":
+    {
+      "ch1":
+      {
+          "position": "position",
+          "delta_freq": 0,
+          "harmonic_orders": 0,
+          "GBT_base": 0,
+          "GBT_CD_coefficient": 0,
+          "shock_snr_th": 0,
+          "shock_frame_length": 0,
+          "shock_hop_length": 0,
+          "spec_snr_th": 0,
+          "minN_rms": 0,
+          "spec_bp_low": 0,
+          "spec_bp_high": 0,
+          "wave_bp_low": 0,
+          "wave_bp_high": 0
+      },
+      "ch2":
+      {
+          "position": "position",
+          "delta_freq": 0,
+          "harmonic_orders": 0,
+          "GBT_base": 0,
+          "GBT_CD_coefficient": 0,
+          "shock_snr_th": 0,
+          "shock_frame_length": 0,
+          "shock_hop_length": 0,
+          "spec_snr_th": 0,
+          "minN_rms": 0,
+          "spec_bp_low": 0,
+          "spec_bp_high": 0,
+          "wave_bp_low": 0,
+          "wave_bp_high": 0
+      },
+      "ch3":
+      {
+          "position": "position",
+          "delta_freq": 0,
+          "harmonic_orders": 0,
+          "GBT_base": 0,
+          "GBT_CD_coefficient": 0,
+          "shock_snr_th": 0,
+          "shock_frame_length": 0,
+          "shock_hop_length": 0,
+          "spec_snr_th": 0,
+          "minN_rms": 0,
+          "spec_bp_low": 0,
+          "spec_bp_high": 0,
+          "wave_bp_low": 0,
+          "wave_bp_high": 0
+      },
+      "ch4":
+      {
+          "position": "position",
+          "delta_freq": 0,
+          "harmonic_orders": 0,
+          "GBT_base": 0,
+          "GBT_CD_coefficient": 0,
+          "shock_snr_th": 0,
+          "shock_frame_length": 0,
+          "shock_hop_length": 0,
+          "spec_snr_th": 0,
+          "minN_rms": 0,
+          "spec_bp_low": 0,
+          "spec_bp_high": 0,
+          "wave_bp_low": 0,
+          "wave_bp_high": 0
+      },
+      "ch5":
+      {
+          "position": "position",
+          "delta_freq": 0,
+          "harmonic_orders": 0,
+          "GBT_base": 0,
+          "GBT_CD_coefficient": 0,
+          "shock_snr_th": 0,
+          "shock_frame_length": 0,
+          "shock_hop_length": 0,
+          "spec_snr_th": 0,
+          "minN_rms": 0,
+          "spec_bp_low": 0,
+          "spec_bp_high": 0,
+          "wave_bp_low": 0,
+          "wave_bp_high": 0
+      },
+      "ch6":
+      {
+          "position": "position",
+          "delta_freq": 0,
+          "harmonic_orders": 0,
+          "GBT_base": 0,
+          "GBT_CD_coefficient": 0,
+          "shock_snr_th": 0,
+          "shock_frame_length": 0,
+          "shock_hop_length": 0,
+          "spec_snr_th": 0,
+          "minN_rms": 0,
+          "spec_bp_low": 0,
+          "spec_bp_high": 0,
+          "wave_bp_low": 0,
+          "wave_bp_high": 0
+      },
+      "ch7":
+      {
+          "position": "position",
+          "delta_freq": 0,
+          "harmonic_orders": 0,
+          "GBT_base": 0,
+          "GBT_CD_coefficient": 0,
+          "shock_snr_th": 0,
+          "shock_frame_length": 0,
+          "shock_hop_length": 0,
+          "spec_snr_th": 0,
+          "minN_rms": 0,
+          "spec_bp_low": 0,
+          "spec_bp_high": 0,
+          "wave_bp_low": 0,
+          "wave_bp_high": 0
+      },
+      "ch8":
+      {
+          "position": "position",
+          "delta_freq": 0,
+          "harmonic_orders": 0,
+          "GBT_base": 0,
+          "GBT_CD_coefficient": 0,
+          "shock_snr_th": 0,
+          "shock_frame_length": 0,
+          "shock_hop_length": 0,
+          "spec_snr_th": 0,
+          "minN_rms": 0,
+          "spec_bp_low": 0,
+          "spec_bp_high": 0,
+          "wave_bp_low": 0,
+          "wave_bp_high": 0
+      },
+      "ch9":
+      {
+          "position": "position",
+          "delta_freq": 0,
+          "harmonic_orders": 0,
+          "GBT_base": 0,
+          "GBT_CD_coefficient": 0,
+          "shock_snr_th": 0,
+          "shock_frame_length": 0,
+          "shock_hop_length": 0,
+          "spec_snr_th": 0,
+          "minN_rms": 0,
+          "spec_bp_low": 0,
+          "spec_bp_high": 0,
+          "wave_bp_low": 0,
+          "wave_bp_high": 0
+      },
+      "ch10":
+      {
+          "position": "position",
+          "delta_freq": 0,
+          "harmonic_orders": 0,
+          "GBT_base": 0,
+          "GBT_CD_coefficient": 0,
+          "shock_snr_th": 0,
+          "shock_frame_length": 0,
+          "shock_hop_length": 0,
+          "spec_snr_th": 0,
+          "minN_rms": 0,
+          "spec_bp_low": 0,
+          "spec_bp_high": 0,
+          "wave_bp_low": 0,
+          "wave_bp_high": 0
+      },
+      "ch11":
+      {
+          "position": "position",
+          "delta_freq": 0,
+          "harmonic_orders": 0,
+          "GBT_base": 0,
+          "GBT_CD_coefficient": 0,
+          "shock_snr_th": 0,
+          "shock_frame_length": 0,
+          "shock_hop_length": 0,
+          "spec_snr_th": 0,
+          "minN_rms": 0,
+          "spec_bp_low": 0,
+          "spec_bp_high": 0,
+          "wave_bp_low": 0,
+          "wave_bp_high": 0
+      },
+      "ch12":
+      {
+          "position": "position",
+          "delta_freq": 0,
+          "harmonic_orders": 0,
+          "GBT_base": 0,
+          "GBT_CD_coefficient": 0,
+          "shock_snr_th": 0,
+          "shock_frame_length": 0,
+          "shock_hop_length": 0,
+          "spec_snr_th": 0,
+          "minN_rms": 0,
+          "spec_bp_low": 0,
+          "spec_bp_high": 0,
+          "wave_bp_low": 0,
+          "wave_bp_high": 0
+      }
+    },
+
+    "self_define_parameter":
+    {
+        "window_ENBW":
+        {
+            "boxcar": [1.0, 0.0],
+            "bartlett": [1.333, 1.250],
+            "blackman": [1.727, 2.373],
+            "hamming": [1.363, 1.345],
+            "hanning": [1.500, 1.761]
+        },
+
+        "GBT":
+        {
+              "GBT_shaft_bp": [0.1, 10],
+              "GBT_stator_bp": [10, 2000],
+              "GBT_shaft_BC": 0.3,
+              "GBT_shaft_CD": 0.5,
+              "GBT_stator_BC": 1.5,
+              "GBT_stator_CD": 2.4
+        },
+
+        "char_frequencies":
+        {
+            "shaft": {"rotation":  1},
+            "stator": {"rotation": 1}
+        }
+    },
+
+    "variable_parameter":
+    {
+        "rpm_pulse": 60,
+        "down_sampling_rate": 16,
+        "trending_period": 90,
+        "surface_defect_dscrp": "surface_defect",
+        "defect_snr_minor": 5,
+        "defect_snr_obv": 10,
+        "defect_snr_vital": 15,
+        "defect_level": {
+            "0": "slight",
+            "1": "obvious",
+            "2": "vital"
+        },
+        "rotational_defect_types": {
+            "0": "unbalance",
+            "1": "misalignment",
+            "2": "looseness",
+            "3": "shaft_crack"
+        },
+        "position_mapping":
+        {
+            "shaft_front_h": "主轴前承径向水平",
+            "shaft_front_v": "主轴前承径向竖直",
+            "shaft_back_h": "主轴后承径向水平",
+            "shaft_back_v": "主轴后承径向竖直",
+            "shaft_back_a": "主轴后轴承轴向",
+            "stator_hl": "发电机定子径向右侧水平",
+            "stator_hr": "发电机定子径向左侧水平",
+            "stator_a": "发电机定子轴向"
+        },
+
+        "plot_freq_upper_limit":
+        {
+            "shaft_front_h": 100,
+            "shaft_front_v": 100,
+            "shaft_back_h": 100,
+            "shaft_back_v": 100,
+            "shaft_back_a": 100,
+            "stator_hl": 500,
+            "stator_hr": 500,
+            "stator_a": 500
+        },
+        "health_status_mapping":
+        {
+            "B": "健康",
+            "C": "预警",
+            "D": "告警"
+        },
+
+        "wave_comment_mapping":
+        {
+            "0": "时域振动平稳，无明显冲击现象。",
+            "1": "时域振动波形可见冲击现象。"
+        },
+        "spec_comment_mapping":
+        {
+            "0": "未见明显谐波特征。",
+            "1": "缺陷特征频率及谐波。"
+        },
+        "defect_freq_mapping":
+        {
+            "BPFI": "内滚道",
+            "BPFO": "外滚道",
+            "BSF": "滚动子",
+            "FTF_i": "保持架",
+            "rotation": "转频"
+        },
+        "trending_comment_mapping":
+        {
+            "0": "趋势特征平稳。",
+            "1": "存在趋势性。"
+        },
+        "statistic_NL_mapping":
+        {
+            "OA": "加速度总值",
+            "avg": "平均值",
+            "crest": "峰值因数",
+            "kurtosis": "峭度",
+            "pp": "峰峰值",
+            "skewness": "偏度"
+        },
+        "rotational_defects_mapping":
+        {
+            "unbalance": "不平衡",
+            "misalignment": "不对中",
+            "looseness": "松动",
+            "shaft_crack": "轴裂纹"
+        },
+        "defect_level_mapping":
+        {
+            "slight": "轻微",
+            "obvious": "明显",
+            "vital": "显著"
+
+        },
+        "maintenance_NL_mapping":
+        {
+            "0": "无。",
+            "1": "保持观察，近期可持续运行。",
+            "2": "密切关注，及时检查。",
+            "3": "尽快停机检修。"
+        },
+        "ch1":
+          {
+              "position": "shaft_back_h",
+              "delta_freq": 0.017,
+              "harmonic_orders": 5,
+              "GBT_base": 0.2,
+              "GBT_CD_coefficient": 0.5,
+              "shock_snr_th": 10,
+              "shock_frame_length": 640,
+              "shock_hop_length": 640,
+              "spec_snr_th": 10,
+              "minN_rms": 300,
+              "spec_bp_low": 0.1,
+              "spec_bp_high": 2000,
+              "wave_bp_low": 0.1,
+              "wave_bp_high": 2000
+          },
+          "ch2":
+          {
+              "position": "shaft_back_v",
+              "delta_freq": 0.017,
+              "harmonic_orders": 5,
+              "GBT_base": 0.2,
+              "GBT_CD_coefficient": 0.5,
+              "shock_snr_th": 10,
+              "shock_frame_length": 640,
+              "shock_hop_length": 640,
+              "spec_snr_th": 10,
+              "minN_rms": 300,
+              "spec_bp_low": 0.1,
+              "spec_bp_high": 2000,
+              "wave_bp_low": 0.1,
+              "wave_bp_high": 2000
+          },
+          "ch3":
+          {
+              "position": "shaft_back_a",
+              "delta_freq": 0.017,
+              "harmonic_orders": 5,
+              "GBT_base": 0.2,
+              "GBT_CD_coefficient": 0.5,
+              "shock_snr_th": 10,
+              "shock_frame_length": 640,
+              "shock_hop_length": 640,
+              "spec_snr_th": 10,
+              "minN_rms": 300,
+              "spec_bp_low": 0.1,
+              "spec_bp_high": 2000,
+              "wave_bp_low": 0.1,
+              "wave_bp_high": 2000
+          },
+          "ch4":
+          {
+              "position": "stator_hl",
+              "delta_freq": 0.017,
+              "harmonic_orders": 5,
+              "GBT_base": 0.2,
+              "GBT_CD_coefficient": 0.5,
+              "shock_snr_th": 10,
+              "shock_frame_length": 640,
+              "shock_hop_length": 640,
+              "spec_snr_th": 10,
+              "minN_rms": 300,
+              "spec_bp_low": 0.1,
+              "spec_bp_high": 2000,
+              "wave_bp_low": 0.1,
+              "wave_bp_high": 2000
+          },
+          "ch5":
+          {
+              "position": "stator_hr",
+              "delta_freq": 0.017,
+              "harmonic_orders": 5,
+              "GBT_base": 0.2,
+              "GBT_CD_coefficient": 0.5,
+              "shock_snr_th": 10,
+              "shock_frame_length": 640,
+              "shock_hop_length": 640,
+              "spec_snr_th": 10,
+              "minN_rms": 300,
+              "spec_bp_low": 10,
+              "spec_bp_high": 2000,
+              "wave_bp_low": 10,
+              "wave_bp_high": 2000
+          },
+          "ch6":
+          {
+              "position": "stator_a",
+              "delta_freq": 0.017,
+              "harmonic_orders": 5,
+              "GBT_base": 0.2,
+              "GBT_CD_coefficient": 0.5,
+              "shock_snr_th": 100,
+              "shock_frame_length": 640,
+              "shock_hop_length": 640,
+              "spec_snr_th": 10,
+              "minN_rms": 300,
+              "spec_bp_low": 10,
+              "spec_bp_high": 2000,
+              "wave_bp_low": 10,
+              "wave_bp_high": 2000
+          },
+          "ch7":
+          {
+              "position": "position",
+              "delta_freq": 0,
+              "harmonic_orders": 0,
+              "GBT_base": 0,
+              "GBT_CD_coefficient": 0,
+              "shock_snr_th": 0,
+              "shock_frame_length": 0,
+              "shock_hop_length": 0,
+              "spec_snr_th": 0,
+              "minN_rms": 0,
+              "spec_bp_low": 0,
+              "spec_bp_high": 0,
+              "wave_bp_low": 0,
+              "wave_bp_high": 0
+          },
+          "ch8":
+          {
+              "position": "position",
+              "delta_freq": 0,
+              "harmonic_orders": 0,
+              "GBT_base": 0,
+              "GBT_CD_coefficient": 0,
+              "shock_snr_th": 0,
+              "shock_frame_length": 0,
+              "shock_hop_length": 0,
+              "spec_snr_th": 0,
+              "minN_rms": 0,
+              "spec_bp_low": 0,
+              "spec_bp_high": 0,
+              "wave_bp_low": 0,
+              "wave_bp_high": 0
+          },
+          "ch9":
+          {
+              "position": "position",
+              "delta_freq": 0,
+              "harmonic_orders": 0,
+              "GBT_base": 0,
+              "GBT_CD_coefficient": 0,
+              "shock_snr_th": 0,
+              "shock_frame_length": 0,
+              "shock_hop_length": 0,
+              "spec_snr_th": 0,
+              "minN_rms": 0,
+              "spec_bp_low": 0,
+              "spec_bp_high": 0,
+              "wave_bp_low": 0,
+              "wave_bp_high": 0
+          },
+          "ch10":
+          {
+              "position": "position",
+              "delta_freq": 0,
+              "harmonic_orders": 0,
+              "GBT_base": 0,
+              "GBT_CD_coefficient": 0,
+              "shock_snr_th": 0,
+              "shock_frame_length": 0,
+              "shock_hop_length": 0,
+              "spec_snr_th": 0,
+              "minN_rms": 0,
+              "spec_bp_low": 0,
+              "spec_bp_high": 0,
+              "wave_bp_low": 0,
+              "wave_bp_high": 0
+          },
+          "ch11":
+          {
+              "position": "position",
+              "delta_freq": 0,
+              "harmonic_orders": 0,
+              "GBT_base": 0,
+              "GBT_CD_coefficient": 0,
+              "shock_snr_th": 0,
+              "shock_frame_length": 0,
+              "shock_hop_length": 0,
+              "spec_snr_th": 0,
+              "minN_rms": 0,
+              "spec_bp_low": 0,
+              "spec_bp_high": 0,
+              "wave_bp_low": 0,
+              "wave_bp_high": 0
+          },
+          "ch12":
+          {
+              "position": "position",
+              "delta_freq": 0,
+              "harmonic_orders": 0,
+              "GBT_base": 0,
+              "GBT_CD_coefficient": 0,
+              "shock_snr_th": 0,
+              "shock_frame_length": 0,
+              "shock_hop_length": 0,
+              "spec_snr_th": 0,
+              "minN_rms": 0,
+              "spec_bp_low": 0,
+              "spec_bp_high": 0,
+              "wave_bp_low": 0,
+              "wave_bp_high": 0
+          }
+    },
+
+    "task_mapping":
+    {
+    },
+
+    "label_mapping":
+    {
+    }
+}
+

@@ -1,0 +1,59 @@
+{
+    "monitor_version": "1.0.0.0",
+    "monitor_description": "振动监测阈值法",
+    "monitor_name": "Thresholding",
+    "monitor_class": "Threshold",
+    "task_pack":
+        {
+            "general":
+                {
+                    "threshold":
+                        {
+                            "description": {"threshold": ["excessive_vibration", "abnormal_noises"]},
+                            "data_pack":
+                                {
+                                    "scenario": "Thresholding",
+                                    "equipment_id": "str, 被监测设备或部件编号",
+                                    "position": "str, 测点，注意测点",
+                                    "datetime": "datetime, YYYY-MM_DD HH:mm:ss, 数据采集时间",
+                                    "raw": "原始数据，1维数组",
+                                    "sample_rate": "采样率"
+                                },
+                            "result_pack":
+                                {
+                                    "result": {
+                                        "exception_code": "str,异常代码，即label_mapping中的某键值",
+                                        "characteristic_value": "float, 反应异常程度的特征值"
+                                    }
+                                }
+                        }
+                }
+        },
+
+    "init_parameter":
+    {
+    },
+
+    "self_define_parameter":
+    {
+    },
+
+    "variable_parameter":
+    {
+        "rms_th": {
+            "lower_bracket_x": 1,
+            "lower_bracket_y": 1,
+            "lower_bracket_z": 1
+        }
+    },
+
+    "task_mapping":
+    {
+    },
+
+    "label_mapping":
+    {
+        "0": "excessive_vibration",
+        "1": "abnormal_noises"
+    }
+}

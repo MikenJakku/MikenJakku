@@ -1,0 +1,42 @@
+{
+    "monitor_version": "1.0.0.1",
+    "monitor_description": "电弧放电监测对象",
+    "monitor_name": "ARC",
+    "monitor_class": "ARCMonitor",
+    "task_pack":
+        {
+            "general":
+                {
+                    "ARC":
+                        {
+                            "description": "电弧放电推理接口，只接受96K采样率数据",
+                            "data_pack":
+                                {
+                                    "data": "data"
+                                },
+                            "result_pack":
+                                {
+                                    "label": "label",
+                                    "level": "level"
+                                }
+                        }
+                }
+        },
+
+    "init_parameter":
+    {
+        "device": "cpu",
+        "sr": 96000,
+        "discharge_threshold": 3
+    },
+
+    "self_define_parameter": {},
+    "variable_parameter": {},
+    "task_mapping":{},
+
+    "label_mapping":
+    {
+        "0": "正常",
+        "1": "dhfd"
+    }
+}

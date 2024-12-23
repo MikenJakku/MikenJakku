@@ -1,0 +1,55 @@
+{
+    "monitor_version": "4.3.0.1",
+    "monitor_description": "局部放电检测",
+    "monitor_name": "PD",
+    "monitor_class": "PDMonitor",
+    "task_pack":
+        {
+            "general":
+                {
+                    "PD":
+                        {
+                            "description": {"PD": ["corona_pd","suspend_surface_pd","suspend_pd","surface_pd"]},
+                            "data_pack":
+                                {
+                                    "data": "data",
+                                    "sample_rate": "sample_rate"
+                                },
+                            "result_pack":
+                                {
+                                    "result": "result",
+                                    "prpd": "prpd",
+                                    "significance": "significance_list",
+                                    "pd_start_time": "start_time",
+                                    "pd_end_time": "end_time"
+                                }
+                        },
+                    "real_time_PD":
+                        {
+                            "description": {"real_time_PD": ["corona_discharge_realtime","double_discharge_realtime","suspended_discharge_realtime","surface_discharge_realtime"]},
+                            "data_pack":
+                                {
+                                    "data": "data"
+                                },
+                            "result_pack":
+                                {
+                                    "result": "result",
+                                    "prpd": "prpd"
+                                }
+                        }
+                }
+        },
+
+    "init_parameter":{},
+    "self_define_parameter": {},
+    "variable_parameter": {},
+    "task_mapping":{},
+    "label_mapping":
+    {
+        "0": "No_discharge",
+        "1": "corona_pd",
+        "2": "suspend_surface_pd",
+        "3": "suspend_pd",
+        "4": "surface_pd"
+    }
+}
